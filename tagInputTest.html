@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+    <meta charset="utf-8"/> 
+    <title>测试</title>
+    <link rel="stylesheet" href="../../jasmine/jasmine.css"> 
+    <link rel="stylesheet" type="text/css" href="cSlider.css"/>
+    <style type="text/css">
+    body {
+        font-family: "Microsoft Yahei";
+    }
+    .main-input {
+        width: 255px;
+        height: 30px;
+        border: 1px solid #ccd3d9;
+        padding-left: 8px;
+        font-size: 12px;
+        margin-right: 7px;
+    }
+    .tag-area {
+        width: 350px;
+        height: 80px;
+        padding: 10px;
+        background-color: #eeeeee;
+        border: 1px solid #eeeeee;
+        overflow: auto;
+    }
+    .mala-btn {
+        display: inline-block;
+        font-weight: normal;
+        text-align: center;
+        vertical-align: middle;
+        cursor: pointer;
+        background-image: none;
+        border: 1px solid transparent;
+        white-space: nowrap;
+        padding: 10px 15px;
+        font-size: 13px;
+        line-height: 18px;
+        height: auto;
+    }
+    .tag-class {
+       padding: 5px 5px 5px 15px; 
+       color: #2F8CD5; 
+       display: inline-block;
+       background-color: #fff; 
+       margin: 0 10px 10px 0;" 
+    }
+    .tag-class .action-del {
+        color: #4169E1;
+        margin-right: 10px;
+        cursor: pointer;
+    }
+    .mala-btn-self {
+        color: #ffffff;
+        background-color: #389FEE;
+        border-color: #389FEE;
+        padding: 3px 30px;
+        font-size: 14px;
+        line-height: 23px;
+    }
+    </style>
+    <script src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
+    <script src="http://libs.baidu.com/underscore/1.3.3/underscore.js"></script>
+    <script src="../../jasmine/jasmine.js"></script>
+    <script src="../../jasmine/jasmine-html.js"></script>
+    <script src="../../jasmine/boot.js"></script> 
+    <script src="tagInput.js"></script>
+    <script src="tagInputSpec.js"></script>
+    </head> 
+    <body> 
+        <input type="text" class="input main-input"  id="tag-value" />
+        <span class="mala-btn mala-btn-self" id="add-tag">添加</span>
+        <div id="tag-area" class="tag-area"></div>
+        <span id="tag-error">&nbsp;</span>
+        <p></p>
+    </body>
+</html>
